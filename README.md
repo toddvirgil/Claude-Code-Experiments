@@ -1,9 +1,17 @@
-# ASCII Art Generator 🎨 - ULTIMATE EDITION
+# ASCII Art Generator 🎨 - ULTIMATE EDITION v2.0
 
-The most feature-rich ASCII art generator available! Convert text into stunning ASCII art with **10 font styles**, **21 color options** including gradients, **background colors**, **text effects**, and **PNG export**.
+The most feature-rich ASCII art generator available! Convert text into stunning ASCII art with **10 font styles**, **21 color options** including gradients, **background colors**, **text effects**, **PNG export**, **image conversion**, **animations**, **transforms**, **presets**, and a **live TUI editor**!
 
-## 🆕 What's New in Ultimate Edition
+## 🆕 What's New in v2.0 - MEGA UPDATE!
 
+### 🚀 Major New Features
+- 🖼️ **Image to ASCII Converter**: Convert JPG/PNG images to ASCII art with 3 character sets
+- 🎨 **Live TUI Editor**: Real-time interactive editor with instant preview
+- ⚡ **Presets System**: 5 built-in presets + ability to save your own
+- 🎬 **Animations**: Typewriter, scrolling, and blinking effects
+- 🔄 **Transforms**: Mirror, rotate, stretch, and compress your art
+
+### ✨ Previous Features (v1.0)
 - 🎨 **3 New Font Styles**: 3D, Script, and Graffiti
 - 🌈 **8 New Color Options**: Fire, Ocean, Forest, Sunset gradients + 3 gradient directions
 - 🎭 **12 Background Colors**: Full ANSI background color support
@@ -43,9 +51,44 @@ The most feature-rich ASCII art generator available! Convert text into stunning 
 - **PNG Export**: Export your creations as PNG images
 - **Customizable**: Choose filename and maintain visual fidelity
 
+### 🖼️ Image to ASCII Converter (NEW!)
+- **3 Character Sets**: Standard, Detailed (70+ chars), or Block characters
+- **Aspect Ratio Preservation**: Maintains image proportions
+- **Customizable Width**: Set output width in characters
+- **Save to File**: Export converted images
+
+### 🎨 Live TUI Editor (NEW!)
+- **Real-Time Preview**: See changes instantly as you type
+- **Arrow Key Navigation**: Change styles, colors, and effects with keyboard
+- **Interactive Interface**: Full-screen curses-based editor
+- **Export on Completion**: Save your creation when done
+
+### ⚡ Presets System (NEW!)
+- **5 Built-In Presets**:
+  - Fire 3D: Eye-catching 3D with fire gradient
+  - Ocean Script: Elegant script with ocean colors
+  - Rainbow Graffiti: Street art with rainbow
+  - Sunset Elegant: Double-line with sunset gradient
+  - Neon Glow: Cyan on black with outline
+- **Custom Presets**: Save your own favorite combinations
+- **JSON Storage**: Presets stored in `~/.ascii_art_presets.json`
+
+### 🎬 Animations (NEW!)
+- **Typewriter Effect**: Characters appear one by one
+- **Scrolling**: Scroll text left or right
+- **Blinking**: Make text blink on/off
+- **Customizable Speed**: Adjust animation timing
+
+### 🔄 Transform Effects (NEW!)
+- **Mirror**: Flip horizontally or vertically
+- **Rotate**: 90°, 180°, or 270° rotation
+- **Stretch**: 2x horizontal or vertical expansion
+- **Compress**: Reduce size by half
+
 ### 🚀 More Features
+- **5 Operating Modes**: Text, Image, Live Editor, Presets, Animation Demo
 - **Standalone Executable**: Works on Mac/Linux without Python installation
-- **Interactive CLI**: Beautiful, easy-to-use command-line interface
+- **Interactive CLI**: Beautiful, easy-to-use command-line interface with emojis
 - **Command-line Arguments**: Quick generation by passing text as arguments
 - **Full Alphabet & Numbers**: Supports A-Z, 0-9, and basic punctuation
 
@@ -314,13 +357,62 @@ python3 ascii_art.py CODE
 
 ## 📊 The Numbers
 
+- **5** Operating Modes
 - **10** Font Styles
 - **21** Color Options
 - **12** Background Colors
 - **4** Text Effects
-- **10,080** Total Possible Combinations!
+- **7** Transform Options
+- **3** Animation Types
+- **3** Image Character Sets
+- **5** Built-in Presets
+- **10,080+** Total Possible Combinations!
 
-Create millions of unique ASCII art pieces!
+Create UNLIMITED unique ASCII art pieces!
+
+## 🎮 Quick Start Guide
+
+### Mode 1: Text to ASCII (Classic)
+```bash
+./dist/ascii-art
+# Follow prompts to create text art with all options
+```
+
+### Mode 2: Image to ASCII (NEW!)
+```bash
+./dist/ascii-art
+# Choose mode 2
+# Enter path to your image
+# Choose character set (standard, detailed, or blocks)
+# Converts any JPG/PNG to ASCII!
+```
+
+### Mode 3: Live TUI Editor (NEW!)
+```bash
+./dist/ascii-art
+# Choose mode 3
+# Use arrow keys to cycle through styles and colors
+# Type to change text
+# See changes in real-time!
+# Press ENTER when done
+```
+
+### Mode 4: Presets (NEW!)
+```bash
+./dist/ascii-art
+# Choose mode 4
+# Select from 5 built-in presets
+# Enter your text
+# Instant professional results!
+```
+
+### Mode 5: Animation Demo (NEW!)
+```bash
+./dist/ascii-art
+# Choose mode 5
+# Try typewriter, scrolling, or blinking animations
+# Perfect for demos and presentations!
+```
 
 ## Building from Source
 
