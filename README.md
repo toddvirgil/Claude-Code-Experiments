@@ -1,30 +1,64 @@
 # ASCII Art Generator 🎨
 
-A simple and fun Python-based ASCII art generator that converts text into various ASCII art styles.
+A simple and fun ASCII art generator that converts text into various ASCII art styles. Available as a **standalone executable** (no Python required!) or as a Python script.
 
 ## Features
 
 - **3 Different Styles**: Block, Slant, and Mini fonts
+- **Standalone Executable**: Works on Mac/Linux without Python installation
 - **Interactive CLI**: Easy-to-use command-line interface
 - **Command-line Arguments**: Quick generation by passing text as arguments
 - **Full Alphabet & Numbers**: Supports A-Z, 0-9, and basic punctuation
 
-## Installation
+## Quick Start (Standalone Executable)
 
-No dependencies required! Just Python 3.6+
+### Build the Executable
+
+```bash
+# Using Make
+make build
+
+# Or using the build script
+./build.sh
+```
+
+### Run It
+
+```bash
+# Interactive mode
+./dist/ascii-art
+
+# Quick mode - pass text as arguments
+./dist/ascii-art HELLO
+```
+
+### Install System-Wide (Optional)
+
+```bash
+# Install to /usr/local/bin
+make install
+
+# Now you can run from anywhere!
+ascii-art HELLO
+```
+
+## Alternative: Run with Python
+
+If you prefer to run the Python script directly:
 
 ```bash
 chmod +x ascii_art.py
+python3 ascii_art.py HELLO
 ```
 
 ## Usage
 
 ### Interactive Mode
 
-Run the script without arguments for interactive mode:
+Run without arguments for interactive mode:
 
 ```bash
-python3 ascii_art.py
+./dist/ascii-art
 ```
 
 You'll be prompted to:
@@ -33,10 +67,12 @@ You'll be prompted to:
 
 ### Command-line Mode
 
-Pass your text as arguments:
+Pass your text as arguments for instant results:
 
 ```bash
-python3 ascii_art.py HELLO
+./dist/ascii-art HELLO
+./dist/ascii-art CODE
+./dist/ascii-art "HI!"
 ```
 
 ## Examples
@@ -94,15 +130,60 @@ python3 ascii_art.py HELLO
 ## Examples to Try
 
 ```bash
+# With executable
+./dist/ascii-art HELLO
+./dist/ascii-art CODE
+./dist/ascii-art 2024
+./dist/ascii-art "HI!"
+
+# With Python
 python3 ascii_art.py HELLO
 python3 ascii_art.py CODE
-python3 ascii_art.py 2024
-python3 ascii_art.py "HI!"
 ```
+
+## Building from Source
+
+### Requirements
+- Python 3.6+
+- PyInstaller (automatically installed by build scripts)
+
+### Build Commands
+
+```bash
+# Build the executable
+make build
+
+# Clean build artifacts
+make clean
+
+# Build and install system-wide
+make install
+
+# Show help
+make help
+```
+
+### Build Files
+- `Makefile` - Build automation
+- `build.sh` - Shell script for building
+- `ascii_art.spec` - PyInstaller configuration
 
 ## Contributing
 
 Feel free to add more fonts or features! The code is structured to make adding new fonts easy - just add a new dictionary following the existing pattern.
+
+## File Structure
+
+```
+.
+├── ascii_art.py       # Main Python script
+├── ascii_art.spec     # PyInstaller spec file
+├── build.sh           # Build script
+├── Makefile           # Build automation
+├── dist/
+│   └── ascii-art      # Standalone executable (after build)
+└── README.md          # This file
+```
 
 ## License
 
