@@ -4,7 +4,8 @@ A simple and fun ASCII art generator that converts text into various ASCII art s
 
 ## Features
 
-- **3 Different Styles**: Block, Slant, and Mini fonts
+- **7 Different Styles**: Block, Slant, Mini, Shadow, Bubble, Double, and Banner fonts
+- **Colorful Output**: 13 colors including rainbow mode with ANSI color support
 - **Standalone Executable**: Works on Mac/Linux without Python installation
 - **Interactive CLI**: Easy-to-use command-line interface
 - **Command-line Arguments**: Quick generation by passing text as arguments
@@ -106,6 +107,36 @@ Pass your text as arguments for instant results:
     |_|
 ```
 
+### Shadow Style (Bold with Shadow Effect)
+
+```
+██    ██   ████████
+██    ██      ██
+████████      ██
+██    ██      ██
+██    ██   ████████
+```
+
+### Bubble Style (Rounded and Bubbly)
+
+```
+ █ █   █
+ █▀█   █
+```
+
+### Double Style (Box Drawing)
+
+```
+ ╦ ╦   ╦
+ ╠═╣   ║
+ ╩ ╩   ╩
+```
+
+### Rainbow Mode 🌈
+
+All styles support rainbow colors where each character cycles through:
+Red → Yellow → Green → Cyan → Blue → Magenta
+
 ## Supported Characters
 
 - **Letters**: A-Z (automatically converted to uppercase)
@@ -115,17 +146,33 @@ Pass your text as arguments for instant results:
 
 ## Style Descriptions
 
-| Style  | Description | Best For |
-|--------|-------------|----------|
-| Block  | Bold, blocky letters with # symbols | Headlines, banners |
-| Slant  | Diagonal, dynamic style with / and \ | Modern, stylish text |
-| Mini   | Compact, 3-line height | Space-constrained displays |
+| Style  | Characters | Description | Best For |
+|--------|-----------|-------------|----------|
+| Block  | `#` | Bold, blocky letters | Headlines, banners |
+| Slant  | `/\` | Diagonal, dynamic style | Modern, stylish text |
+| Mini   | `_/\|` | Compact, 3-line height | Space-constrained displays |
+| Shadow | `█` | Bold with shadow effect | Eye-catching headers |
+| Bubble | `▄▀█` | Rounded and bubbly | Fun, playful text |
+| Double | `╔╗╚╝` | Double-lined box drawing | Elegant, professional |
+| Banner | `#` | Simple banner style | Classic look |
+
+## Color Options
+
+The generator supports 14 color options:
+- **Standard Colors**: Red, Green, Yellow, Blue, Cyan, Magenta
+- **Bright Colors**: Bright Red, Bright Green, Bright Yellow, Bright Blue, Bright Cyan, Bright Magenta
+- **Rainbow Mode**: Each character gets a different color! 🌈
+- **No Color**: Classic monochrome output
 
 ## Tips
 
-- Use the "all" option to preview your text in all styles at once
+- Use the "all" option to preview your text in all 7 styles at once
+- Try rainbow mode for eye-catching, colorful output
+- Shadow and Bubble styles work great with bright colors
 - Keep text short (1-10 characters) for best results
+- Terminal must support ANSI colors for color output to work
 - Great for creating banners, headers, or fun messages!
+- Mix different styles and colors to find your favorite combination
 
 ## Examples to Try
 
